@@ -1,0 +1,33 @@
+<main role="main">
+  <app-jumbotron
+  title="News title"
+  [arrayContent]="[
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non labore facere ducimus
+    laboriosam, magni esse? Provident accusamus et repellat, maxime reprehenderit tempora assumenda asperiores
+    adipisci. Eaque corporis suscipit quam.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non labore facere ducimus
+    laboriosam, magni esse? Provident accusamus et repellat, maxime reprehenderit tempora assumenda asperiores
+    adipisci. Eaque corporis suscipit quam.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non labore facere ducimus
+    laboriosam, magni esse? Provident accusamus et repellat, maxime reprehenderit tempora assumenda asperiores
+    adipisci. Eaque corporis suscipit quam.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non labore facere ducimus
+    laboriosam, magni esse? Provident accusamus et repellat, maxime reprehenderit tempora assumenda asperiores
+    adipisci. Eaque corporis suscipit quam.'
+  ]"
+  ></app-jumbotron>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <h2>Related news</h2>
+      <hr>
+      <div class="row">
+        <div *ngFor="let card of [1,2,3]" class="col-md-4">
+          <app-card></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,21 @@
+<main role="main">
+
+  <app-jumbotron class="text-center" 
+    title="Album example"
+    content="Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely."
+  ></app-jumbotron>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div *ngFor="let card of [1,2,3]" class="col-md-4">
+          <app-card></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<app-footer></app-footer>

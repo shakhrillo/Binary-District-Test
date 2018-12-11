@@ -1,0 +1,21 @@
+jumbotronPY = 3rem
+
+.jumbotron
+  padding-top: jumbotronPY
+  padding-bottom: jumbotronPY
+  margin-bottom: 0
+  background-color: #fff
+
+@media (min-width: 768px)
+  .jumbotron 
+    padding-top: calc(jumbotronPY * 2)
+    padding-bottom: calc(jumbotronPY * 2)
+
+.jumbotron p:last-child 
+  margin-bottom: 0
+
+.jumbotron-heading
+  font-weight: 300
+
+.jumbotron .container
+  max-width: 40rem
